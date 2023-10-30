@@ -177,7 +177,16 @@ const Component = () => {
         </div>
         
       </div>
-      
+      <div class="flex-auto flex space-x-4">
+        <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit" href="/register">
+          Test
+        </button>
+        <a href="/login">
+        <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+          Go login page
+        </button>
+        </a>
+      </div>
     </div>
     
   );
