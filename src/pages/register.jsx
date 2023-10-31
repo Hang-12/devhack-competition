@@ -253,7 +253,7 @@ const RegisterPage = () => {
           </div>
           <div className="flex justify-center items-center border rounded text-white bg-blue-500 px-4 py-2 mt-4">
             <button>
-              Submit
+              Register
             </button>
           </div>
         </form>

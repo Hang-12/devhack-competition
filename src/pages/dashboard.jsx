@@ -107,79 +107,82 @@ const dataVerticalBar1 = {
 
 const Component = () => {
   return (
-    <div className="w-full pl-4">
-      <h2 className="font-bold text-xl">Patient</h2>
-      <div className="grid grid-cols-2">
-        <div className="flex justify-center items-center col-span-1">
-          <Bar
-            data={dataVerticalBar}
-            options={{
-              scales: {
-                yAxes: [
-                  {
-                    ticks: {
-                      beginAtZero: true,
+    <Sidebar>
+      <Container>
+        <main>
+          <div className="w-full pl-4">
+            <h2 className="font-bold text-xl">Patient</h2>
+            <div className="grid grid-cols-2">
+              <div className="flex justify-center items-center col-span-1">
+                <Bar
+                  data={dataVerticalBar}
+                  options={{
+                    scales: {
+                      yAxes: [
+                        {
+                          ticks: {
+                            beginAtZero: true,
+                          },
+                        },
+                      ],
                     },
-                  },
-                ],
-              },
-            }}
-          />
-        </div>
-        <div className="col-span-1">
-          <Doughnut
-            data={dataDoughnut}
-            options={{
-              responsive: true,
-            }}
-          />
-        </div>
-        <div>
-          <Pie
-            data={dataPie}
-            options={{
-              responsive: true,
-            }}
-          />
-        </div>
-        <div className="flex justify-center items-center col-span-1">
-          <Line
-            data={dataLine}
-            options={{
-              responsive: true,
-              scales: {
-                yAxes: [
-                  {
-                    ticks: {
-                      beginAtZero: true,
+                  }}
+                />
+              </div>
+              <div className="col-span-1">
+                <Doughnut
+                  data={dataDoughnut}
+                  options={{
+                    responsive: true,
+                  }}
+                />
+              </div>
+              <div>
+                <Pie
+                  data={dataPie}
+                  options={{
+                    responsive: true,
+                  }}
+                />
+              </div>
+              <div className="flex justify-center items-center col-span-1">
+                <Line
+                  data={dataLine}
+                  options={{
+                    responsive: true,
+                    scales: {
+                      yAxes: [
+                        {
+                          ticks: {
+                            beginAtZero: true,
+                          },
+                        },
+                      ],
                     },
-                  },
-                ],
-              },
-            }}
-          />
-        </div>
-        <div>
-          <Bar
-            data={dataVerticalBar1}
-            options={{
-              scales: {
-                yAxes: [
-                  {
-                    ticks: {
-                      beginAtZero: true,
+                  }}
+                />
+              </div>
+              <div>
+                <Bar
+                  data={dataVerticalBar1}
+                  options={{
+                    scales: {
+                      yAxes: [
+                        {
+                          ticks: {
+                            beginAtZero: true,
+                          },
+                        },
+                      ],
                     },
-                  },
-                ],
-              },
-            }}
-          />
-        </div>
-        
-      </div>
-      
-    </div>
-    
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </main>
+      </Container>
+    </Sidebar>
   );
 };
 

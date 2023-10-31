@@ -72,6 +72,17 @@ const LoginPage = () => {
             </button>
           </div>
         </form>
+        <div className="flex justify-center items-center text-white bg-blue-500 px-4 py-2 mt-2 rounded">
+          <button
+            onClick={() => {
+              router.push({
+                pathname: `/register`,
+              })
+            }}
+          >
+            Do not have an account? Register
+          </button>
+        </div>
       </div>
     </div>
   );
