@@ -182,7 +182,7 @@ const Component = () => {
           </div>
         </main>
       </Container>
-    </Sidebar>
+    </Sidebar>  
   );
 };
 
