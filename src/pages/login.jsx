@@ -4,30 +4,47 @@ import { useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
+import API from '@@/endpoints/api';
 import Image from 'next/image';
 import { Images } from '@@/assets';
 
 const LoginPage = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState(``);
+  const [password, setPassword] = useState(``);
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   const router = useRouter();
+
+  // const handleLogin = async (e) => {
+  //   e.preventDefault();
+  //   const resultLogin = await API.login({ username, password });
+
+  //   if (resultLogin.status !== 200 ) {
+  //     return toast.error(resultLogin.response.message);
+  //   }
+
+  //   router.reload();
+  // }
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Head>
         <title>Infinitum Login</title>
       </Head>
-      <div className="p-8 rounded shadow-xl">
+      <div className="p-10 rounded-lg shadow-xl">
+        <Image
+          alt={`Back`}
+          src={Images.arrow_left}
+          className={`w-8 mb-4`}
+          onClick={() => {
+            router.back();
+          }}
+        />
         <h2 className="flex items-center justify-center text-xl font-bold mb-4">Infinitum | Login Page</h2>
         <form>
           <div className="mb-4">
-            <label className="font-semibold mb-2">
-              Username
-            </label>
             <input
-              className="border rounded px-3 py-2 w-full"
+              className="border rounded-full px-3 py-2 w-full"
               type="text"
               id="username"
               name="username"
@@ -39,12 +56,9 @@ const LoginPage = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="font-semibold mb-2">
-              Password
-            </label>
             <div className="relative">
               <input
-                className="border rounded px-3 py-2 w-full"
+                className="border rounded-full px-3 py-2 w-full"
                 type={isPasswordVisible ? `text` : `password`}
                 id="password"
                 name="password"
@@ -66,21 +80,29 @@ const LoginPage = () => {
               />
             </div>
           </div>
-          <div className="flex justify-center items-center text-white bg-blue-500 px-4 py-2 rounded">
-            <button>
-              Log In
+          <div className="flex justify-center items-center text-white bg-button px-4 py-2 rounded-full">
+            <button
+              type="button"
+              onClick={() => {
+                router.push({
+                  pathname: `/doctor-dashboard`,
+                });
+              }}
+            >
+              Log In (Currently Proceed to Dashboard)
             </button>
           </div>
         </form>
-        <div className="flex justify-center items-center text-white bg-blue-500 px-4 py-2 mt-2 rounded">
+        <div className="flex justify-center items-center mt-4">
           <button
+            type="button"
             onClick={() => {
               router.push({
                 pathname: `/register`,
-              })
+              });
             }}
           >
-            Do not have an account? Register
+            <span>Create Account</span>
           </button>
         </div>
       </div>
