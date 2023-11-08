@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { toast } from 'react-toastify';
 import Head from 'next/head';
 import RadioGroup from '@@/components/RadioGroup';
+import Image from 'next/image';
+import { Images } from '@@/assets';
 
 const RegisterPage = () => {
   const router = useRouter();
@@ -38,10 +40,18 @@ const RegisterPage = () => {
       <Head>
         <title>Infinitium Register</title>
       </Head>
-      <div className="p-8 rounded shadow-xl">
-        <h2 className="flex items-center justify-center text-xl font-bold mb-4">Registration</h2>
+      <div className="p-10 rounded-lg shadow-xl">
+        <Image
+          alt={`Back`}
+          src={Images.arrow_left}
+          className={`w-8 mb-4`}
+          onClick={() => {
+            router.back();
+          }}
+        />
+        <h2 className="flex items-center justify-center text-xl font-bold mb-4">Infinitum | Sign Up Page</h2>
         <form>
-          <div className="grid grid-rows-6 grid-cols-2">
+          <div className="grid grid-rows-6 grid-cols-2 gap-2">
             <div>
               <label className="block font-bold mb-2">Name</label>
               <input
@@ -225,7 +235,7 @@ const RegisterPage = () => {
               />
             </div>
           </div>
-          <div className="mt-4 grid grid-col-2">
+          {/* <div className="mt-4 grid grid-col-2">
             <input
                 className="border rounded px-3 py-2"
                 id="otp"
@@ -250,10 +260,10 @@ const RegisterPage = () => {
               </button>
             )}
             
-          </div>
-          <div className="flex justify-center items-center border rounded text-white bg-blue-500 px-4 py-2 mt-4">
+          </div> */}
+          <div className="flex justify-center items-center border rounded-full px-4 py-2 mt-4 font-bold text-lg">
             <button>
-              Submit
+              Register
             </button>
           </div>
         </form>

@@ -25,3 +25,39 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+.bg-dark-blue {
+  background-color: rgba(96, 160, 188);
+}
+
+.bg-light-blue {
+  background-color: rgba(99, 208, 255);
+}
+
+.bg-button {
+  background-color: rgba(90, 81, 81)
+}
+
+.bg-chart-lightblue {
+  background-color: rgba(150, 255, 236)
+}
+
+.bg-chart-red {
+  background-color: rgba(254, 143, 143)
+}
+
+.bg-chart-darkblue {
+  background-color: rgba(38, 76, 151)
+}
+
+.bg-chart-orange {
+  background-color: rgba(244, 137, 60, 1)
+}
+
+.bg-appointment {
+  background-color: rgb(206, 255, 246)
+}
+
+.bg-sidebar {
+  background-color: rgb(230, 230, 230)
+}
