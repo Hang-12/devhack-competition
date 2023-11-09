@@ -11,7 +11,7 @@ import { Images } from '@@/assets';
 const RegisterPage = () => {
   const router = useRouter();
 
-  const [name, setName] = useState(`Yong Zong Huang`);
+  const [name, setName] = useState(`Yong Wei Hang`);
   const [nric, setNric] = useState(`19382828311`);
   const [dateOfBirth, setDateOfBirth] = useState(`2001-03-19`);
   const [gender, setGender] = useState(`0`);
@@ -21,7 +21,7 @@ const RegisterPage = () => {
   const [buildingName, setBuildingName] = useState(`Building A`);
   const [street, setStreet] = useState(`Street B`);
   const [postalCode, setPostalCode] = useState(`50100`);
-  const [bankAccountHolderName, setBankAccountHolderName] = useState(`Yong Zong Huang`);
+  const [bankAccountHolderName, setBankAccountHolderName] = useState(`Yong Wei Hang`);
   const [bankAccountNumber, setBankAccountNumber] = useState(`2382832938`);
   const [otp, setOtp] = useState(``);
   const [isShowOtp, setIsShowOtp] = useState(false);

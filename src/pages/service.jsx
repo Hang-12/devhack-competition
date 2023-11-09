@@ -25,26 +25,17 @@ const Service = () => {
             {
               title: `Heart Visualization`,
               image: Images.heart_service,
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco l
-              aboris nisi ut aliquip ex ea commodo consequat`,
+              description: `Gain insights into your heart's health with our advanced heart visualization tools. These cutting-edge technologies help you understand your cardiac health like never before.`,
             },
             {
               title: `Real-Time Report`,
               image: Images.real_time_report,
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco l
-              aboris nisi ut aliquip ex ea commodo consequat`,
+              description: `Stay updated on your heart's condition with real-time reports, making it easy to monitor your health status and make informed decisions.`,
             },
             {
               title: `24 Hours AI Chatbot`,
               image: Images.ai_chatbot,
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco l
-              aboris nisi ut aliquip ex ea commodo consequat`,
+              description: `Our AI-powered medical chatbot is available 24/7 to answer your questions and provide you with quick medical advice and information.`,
             }
           ].map(({ title, image, description }) => {
             return (
