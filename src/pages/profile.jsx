@@ -19,7 +19,7 @@ const Profile = () => {
       <div>
         <div>
           <div>
-            <p>Patient Profile</p>
+            <p>Profile</p>
             <div>
               <div>
                 <Image/>

@@ -9,8 +9,8 @@ import Image from 'next/image';
 import { Images } from '@@/assets';
 
 const LoginPage = () => {
-  const [username, setUsername] = useState(``);
-  const [password, setPassword] = useState(``);
+  const [username, setUsername] = useState(`weihang@gmail.com`);
+  const [password, setPassword] = useState(`Hello@123`);
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   const router = useRouter();

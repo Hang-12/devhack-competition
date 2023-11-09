@@ -16,6 +16,7 @@ const Images = {
   doctor_profile: require(`./doctor-profile.png`),
   heart_icon: require(`./heart-icon.png`),
   doctor_team: require(`./doctor-team.png`),
+  profile: require(`./profile-picture.png`),
 };
 
 export default Images;

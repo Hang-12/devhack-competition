@@ -32,13 +32,7 @@ const Home = () => {
             </div>
             <div className="mt-16">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco l
-                aboris nisi ut aliquip ex ea commodo consequat.Duis aute irure 
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Welcome to Infinitum, your trusted partner in managing your heart health. Our user-friendly platform empowers you to take control of your well-being. On this page, you can schedule appointments, access real-time heart status reports, connect with medical professionals via our medical chatbot, and explore a wealth of services designed to support your cardiac health journey.
               </p>
             </div>
             <div className="flex items-center justify-center gap-7 mt-6">
